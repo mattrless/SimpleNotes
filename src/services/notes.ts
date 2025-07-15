@@ -17,7 +17,7 @@ export async function fetchNotes(): Promise<Note[]> {
     if (!notes || !Array.isArray(notes)) {
       throw new Error('Notes not found')
     }  
-    console.log('FROM API')
+    
     return notes
   } catch (error) {
     console.error('Error fetching notes:', error)
